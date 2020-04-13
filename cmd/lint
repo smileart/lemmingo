@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+BASEDIR=$(dirname $0)
+SELF_LOCATION="${PWD}/${BASEDIR}"
+
+# brew install golangci/tap/golangci-lint
+# brew upgrade golangci/tap/golangci-lint
+golangci-lint run --enable-all
