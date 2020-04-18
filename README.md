@@ -6,7 +6,8 @@
 
 > Defensive lemmatiser/stemmer written in Go ⊂( ⚆ ϖ⚆)っ
 >
-> [![Go Report Card](https://goreportcard.com/badge/github.com/smileart/lemmingo)](https://goreportcard.com/report/github.com/smileart/lemmingo)
+> [![Go Report Card](https://goreportcard.com/badge/github.com/smileart/lemmingo)](https://goreportcard.com/report/github.com/smileart/lemmingo) [![GoDoc](https://godoc.org/github.com/smileart/lemmingo?status.svg)](https://godoc.org/github.com/smileart/lemmingo)
+
 
 ## 🤔 Why
 
