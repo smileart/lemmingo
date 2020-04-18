@@ -20,6 +20,7 @@ import (
 	"golang.org/x/text/language/display"
 )
 
+// Lemmingo is the lemmatiser and its configuration
 type Lemmingo struct {
 	dict            map[string]string
 	stemmerLang     string
