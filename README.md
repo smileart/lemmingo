@@ -187,6 +187,26 @@ For much more usage examples and quirks see [./examples](./examples)
 * Since Aspell uses dictionaries every instance consumes one file descriptor from the system limit per process, so unlike stemmer the speller is created cautiously with limit equal to `runtime.NumCPU()` otherwise on handling huge texts concurrently it'd consume all the descriptors allowed.
 * Currently the underlying Aspell binding has **[issues with CGO error handling](https://github.com/trustmaster/go-aspell/issues/1)** when unknown language provided, so when using `New`/`Build` methods make sure you've tested it with all the languages you're planning to support.
 * For development convenience you just run your code using Lemmingo and the default dictionary will be automatically installed into `$HOME/.lemmingo` directory, **BUT** when shipping resulting binaries/build/container **DO NOT FORGET** to provide dictionaries and allow setting absolute path to them.
+* Try to use the latest version of Aspell library and its dictionaries. Example:
+    ```shell
+      # macOS 10.15.4
+      brew install aspell
+      aspell -v
+      # => International Ispell Version 3.1.20 (but really Aspell 0.60.8)
+      # Input: biologically (not in the dictionary) -> Stemma: biolog (https://snowballstem.org/demo.html) -> Spelling: biology
+
+      # Ubuntu 18.04, bionic
+      apt install aspell
+      aspell -v
+      # => International Ispell Version 3.1.20 (but really Aspell 0.60.7-20110707)
+      # Input: biologically (not in the dictionary) -> Stemma: biolog (https://snowballstem.org/demo.html) -> Spelling: bio log
+
+      # Ubuntu 20.04, focal
+      apt install aspell
+      aspell -v
+      # => International Ispell Version 3.1.20 (but really Aspell 0.60.8)
+      # Input: biologically (not in the dictionary) -> Stemma: biolog (https://snowballstem.org/demo.html) -> Spelling: biology
+    ```
 
 ## 💡 Tips & Tricks
 
