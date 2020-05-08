@@ -12,6 +12,7 @@ func tagsetMapping(tagsetName string, languageTag string) (map[string]string, er
 	closureMap := map[string]map[string]string{
 		"penn_en":     pennEn,     // Penn Treebank Project, EN
 		"freeling_en": freelingEn, // FreeLing Project, EN
+		"wordnet_en":  wordnetEn,  // WordNet Project, EN
 	}
 
 	mappingKey := tagsetName + "_" + languageTag

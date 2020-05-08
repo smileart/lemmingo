@@ -118,3 +118,14 @@ var freelingEn = map[string]string{
 	"WRB":           "ADV",
 	"WRB+VB":        "ADV",
 }
+
+// WordNet Project - EN, WordNet® is a large lexical database of English
+// REF: https://wordnet.princeton.edu/
+// REF: https://wordnet.princeton.edu/documentation/wndb5wn
+var wordnetEn = map[string]string{
+	"n": "NOUN",
+	"v": "VERB",
+	"a": "ADJ",
+	"s": "ADJ",
+	"r": "ADV",
+}
