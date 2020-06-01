@@ -7,6 +7,7 @@
 > Defensive lemmatiser/stemmer written in Go ⊂( ⚆ ϖ⚆)っ
 >
 > [![Go Report Card](https://goreportcard.com/badge/github.com/smileart/lemmingo)](https://goreportcard.com/report/github.com/smileart/lemmingo) [![GoDoc](https://godoc.org/github.com/smileart/lemmingo?status.svg)](https://godoc.org/github.com/smileart/lemmingo)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsmileart%2Flemmingo.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsmileart%2Flemmingo?ref=badge_shield)
 
 
 ## 🤔 Why
@@ -231,3 +232,6 @@ For much more usage examples and quirks see [./examples](./examples)
 > Copyright (c) 2012, Miki Tebeka <miki.tebeka@gmail.com>
 
 > Special thanks to [Anton Södergren](https://github.com/aaaton/) for inspiration and helpful answers, and [Anton Ilin](https://github.com/bronislav) for discussions, opinion, testing and rubber-duck debugging :)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsmileart%2Flemmingo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsmileart%2Flemmingo?ref=badge_large)
